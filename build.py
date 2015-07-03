@@ -47,4 +47,7 @@ builder.set_options([
 builder.generate_designspace()
 builder.generate_fmndb()
 
+kit.builder.WriteFeaturesMarkFDK.kIndianAboveMarks = 'top'
+kit.builder.WriteFeaturesMarkFDK.kIndianBelowMarks = 'bottom'
+
 builder.build()
