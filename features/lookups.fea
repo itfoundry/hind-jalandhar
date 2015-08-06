@@ -1,3 +1,10 @@
+# -------------------
+# BASIC SHAPING FORMS
+# -------------------
+
+# Nukta Forms
+# -----------
+
 lookup nukt {
   sub grKHA grNukta by grKHxA;
   sub grGA  grNukta by  grGxA;
@@ -7,6 +14,9 @@ lookup nukt {
   sub grSA  grNukta by  grSxA;
 } nukt;
 
+
+# Below-base Forms
+# ----------------
 
 lookup blwf_new {
   sub grVirama grRA by grRAc2;
@@ -21,6 +31,9 @@ lookup blwf_old {
 } blwf_old;
 
 
+# Post-base Forms
+# ---------------
+
 lookup pstf_new {
   sub grVirama grYA by grYAc2;
 } pstf_new;
@@ -29,6 +42,13 @@ lookup pstf_old {
   sub grYA grVirama by grYAc2;
 } pstf_old;
 
+
+# ----------------------------
+# MANDATORY PRESENTATION FORMS
+# ----------------------------
+
+# Above-base Substitution
+# -----------------------
 
 lookup abvs_matra_bindi {
   sub grmII grBindi by grmII_Bindi;
@@ -58,6 +78,9 @@ lookup abvs_headline_insertion {
 
 } abvs_headline_insertion;
 
+
+# Below-base Substitution
+# -----------------------
 
 lookup blws_matra_uu_alt {
   sub grRAc2 grmUU' by grmUU.alt;
